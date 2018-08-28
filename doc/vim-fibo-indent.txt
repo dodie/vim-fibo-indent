@@ -1,0 +1,29 @@
+*vim-fibo-indent.txt*                           Fibonacci Indentation for Vim
+
+==============================================================================
+INTRODUCTION                                                 *vim-fibo-indent*
+
+Vim plugin that increases the spacing for each successive indentation
+according to the Fibonacci sequence.
+
+==============================================================================
+OPTIONS                                                              *options*
+
+                                           *'g:FiboIndentDisable'*
+Set this parameter to disable Fibonacci indentation.
+>
+    let g:FiboIndentDisable=1
+<
+
+==============================================================================
+CREDITS                                                              *credits*
+
+Developed by David Csakvari.
+The idea came from a Tweet made by @RichardWestenra:
+https://twitter.com/RichardWestenra/status/765488378951376896
+
+Distributed under the MIT license.
+Project's home and Git repository: https://github.com/dodie/vim-fibo-indent
+
+------------------------------------------------------------------------------
+ vim:tw=78:ts=8:ft=help:norl:
