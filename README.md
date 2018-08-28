@@ -8,7 +8,7 @@ to the Fibonacci sequence.
 
 Great for mathematicians and for people who like to avoid deep indentations.
 Supports 15 indentation levels, which should be more than enough even if you have
-a really wide display.
+a really wide display (though it can be increased for the extra brave).
 
 
 ## Installation
@@ -24,6 +24,12 @@ Add this line to your `.vimrc` to disable this plugin:
 
 ```
 let g:FiboIndentDisable=1
+```
+
+If for some reason you need more than 15 levels of indentation its depth can be set with:
+
+```
+let g:FiboMaxDepth=20
 ```
 
 To disable Fibonacci formatting for a given filetype, use the following:

@@ -14,11 +14,17 @@ Set this parameter to disable Fibonacci indentation.
 >
     let g:FiboIndentDisable=1
 <
+Set this parameter to set max depth for Fibonacci indentation.
+>
+    let g:FiboMaxDepth=15
+<
 
 ==============================================================================
 CREDITS                                                              *credits*
 
 Developed by David Csakvari.
+Updated by Isaac Morneau.
+
 The idea came from a Tweet made by @RichardWestenra:
 https://twitter.com/RichardWestenra/status/765488378951376896
 
