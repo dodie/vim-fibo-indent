@@ -34,7 +34,26 @@ endfunction
 
 " Plugin setup
 if !exists('g:FiboIndentDisable')
-    let s:fiboIndent = [[0, 0], [1, 1], [2, 2], [3, 4], [5, 7], [8, 12], [13, 20], [21, 33], [34, 54], [55, 88], [89, 143], [144, 232], [233, 376], [377, 609], [610, 975]]
+    if !exists("g:FiboMaxDepth")
+        let g:FiboMaxDepth = 15
+    endif
+
+    let s:fiboIndent = [[0,0], [1,1]]
+
+    let s:f1 = 2
+    let s:f2 = 3
+    let s:total= 2
+
+    let s:i = 2
+    while s:i < g:FiboMaxDepth
+        let s:i += 1
+        let s:fiboIndent = add(s:fiboIndent, [s:f1, s:total])
+        let s:total += s:f1
+
+        let s:temp = s:f1
+        let s:f1 = s:f2
+        let s:f2 += s:temp
+    endwhile
 
     let s:toFibo = {}
     let s:fromFibo = {}
