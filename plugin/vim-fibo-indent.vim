@@ -38,16 +38,16 @@ if !exists('g:FiboIndentDisable')
         let g:FiboMaxDepth = 15
     endif
 
-    let s:fiboIndent = []
+    let s:fiboIndent = [[0,0], [1,1]]
 
-    let s:f1 = 0
-    let s:f2 = 1
-    let s:total= 0
+    let s:f1 = 2
+    let s:f2 = 3
+    let s:total= 2
 
-    let s:i = 0
-    while s:i < g:FiboMaxDepth
+    let s:i = 2
+    while s:i < s:FiboMaxDepth
         let s:i += 1
-        let s:fiboIndent = add(s:fiboIndent, [s:f1, s:total])
+        let g:fiboIndent = add(s:fiboIndent, [s:f1, s:total])
         let s:total += s:f1
 
         let s:temp = s:f1
