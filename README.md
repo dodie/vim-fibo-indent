@@ -47,6 +47,6 @@ made by [@RichardWestenra](https://twitter.com/RichardWestenra).
 ## How it works
 
 This plugin wraps the original formatter defined for a filetype and modifies its indentation
-levels to match the Fibbonacci sequence. It also sets `tabstop=1` to use a single space for
+levels to match the Fibonacci sequence. It also sets `tabstop=1` to use a single space for
 the basis of the indentation levels.
 
